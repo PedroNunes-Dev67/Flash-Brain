@@ -1,0 +1,62 @@
+.container{
+    width: 98.8vw;
+    height: 98.8vh;
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    align-items: center;
+    border: solid 4px rgb(216, 128, 80);
+}
+.form{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center; 
+    background-color: white;
+    color: black;
+    padding: 60px;
+    border-radius: 12px;
+}
+.form form{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+.form h2{
+    margin-top: 0;
+}
+.form input{
+    margin-top: 10px;
+}
+.botao{
+    border: none;
+    width: 100px;
+    padding: 8px;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: all 0.3s ease;
+    background-color: rgb(176, 176, 33);
+    color: black;
+    font-weight: bold;
+    font-size: 20px;
+}
+.botao:hover{
+    transform: scale(1.09);
+    transition: all 0.3s ease;
+}
+.inputs{
+    width: 150px;
+    height: 25px;
+    border: solid 4px rgb(216, 128, 80);
+    border-radius: 8px;
+    text-align: center;
+}
+.span{
+    font-weight: bold;
+    margin-top: 10px;
+    font-size: 14px;
+}
+.Image{
+    margin-top: 20px;
+    margin-bottom: 20px;
+}
