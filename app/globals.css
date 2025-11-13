@@ -11,11 +11,8 @@ body {
 body {
   color: white;
   background: #5b1e00;
-<<<<<<< HEAD
   font-family: 'Poppins', sans-serif;
-=======
   font-family: Arial, Helvetica, sans-serif;
->>>>>>> 320a44ceb1a73faccab00b7e3b3d755d11fcf486
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
 }
