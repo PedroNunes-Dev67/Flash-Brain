@@ -1,6 +1,176 @@
-.main{
+.container {
+    width: 100vw;
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    align-items: center;
+
+    background: linear-gradient(135deg, #2a0f00, #5b1e00, #250c00);
+
+}
+
+.form {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+
+    padding: 60px;
+    border-radius: 20px;
+
+    /* Square do formulario fica com tematica de vidro */
+    background: rgba(255, 255, 255, 0.12); /* leve transparência */
+    backdrop-filter: blur(12px);
+    -webkit-backdrop-filter: blur(12px);
+    border: 1px solid rgba(255, 255, 255, 0.25); 
+    box-shadow: 0 8px 25px rgba(0, 0, 0, 0.25); 
+}
+.form form{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+.form h1{
+    font-size: 26px;
+    margin-top: 10px;
+    font-family: 'Poppins', sans-serif;
+    text-shadow: 3px 3px 3px #000000;
+}
+.form h2{
+    margin-top: 0px;
+    margin-bottom: 10px;
+    font-family: 'Poppins', sans-serif;
+    text-shadow: 3px 3px 3px #000000;
+}
+.form h2 span {
+    font-weight: bold;
+    filter: drop-shadow(3px 3px 1.5px #000000);
+    text-shadow: none;
+    background: linear-gradient(to right, #ffffff, #8b3b13, #8b3b13, #ffffff );
+    background-size: 200%;
+    background-clip: text;
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    animation: animate-gradient 2.5s linear infinite; 
+}
+@keyframes animate-gradient {
+    to {
+        background-position: 200%;
+    }
+}
+.form input{
+    margin-top: 10px;
+}
+.botao{
+    margin-bottom: 10px;
+    width: 300px;
+    height: 45px;
+    padding: 0 15px;
+
+    border-radius: 12px;
+    border: 1px solid rgba(255, 255, 255, 0.35);
+    outline: none;
+
+    background: rgba(255, 255, 255, 0.08);
+    backdrop-filter: blur(4px);
+    -webkit-backdrop-filter: blur(4px);
+
+    color: #ffffff;
+    font-size: 15px;
+    font-family: 'Poppins', sans-serif;
+
+    transition: 0.3s ease;
+}
+.botao:hover{
+    background-color: #52505046;
+    color: #000000;
+    transform: scale(1.09);
+    transition: all 0.3s ease;
+}
+.inputs{
+    width: 300px;
+    height: 35px;
+    border: solid 4px #5b1e00;
+    border-radius: 8px;
     text-align: center;
+    color: aliceblue;
 }
-.main h1{
-    margin-top: 40px;
+.inputs[type="email"] {
+    width: 300px;
+    height: 45px;
+    padding: 0 15px;
+
+    border-radius: 12px;
+    border: 1px solid rgba(255, 255, 255, 0.35);
+    outline: none;
+
+    background: rgba(71, 27, 2, 0.685);
+    backdrop-filter: blur(4px);
+    -webkit-backdrop-filter: blur(4px);
+
+    color: #ffffff;
+    font-size: 15px;
+    font-family: 'Poppins', sans-serif;
+
+    transition: 0.3s ease;
+    margin-bottom: 10px;
 }
+.inputs[type="password"] {
+    width: 300px;
+    height: 45px;
+    padding: 0 15px;
+
+    border-radius: 12px;
+    border: 1px solid rgba(255, 255, 255, 0.35);
+    outline: none;
+
+    background: rgba(71, 27, 2, 0.685);
+    backdrop-filter: blur(4px);
+    -webkit-backdrop-filter: blur(4px);
+
+    color: #ffffff;
+    font-size: 15px;
+    font-family: 'Poppins', sans-serif;
+
+    transition: 0.3s ease;
+    margin-bottom: 25px;
+}
+.span{
+    font-weight: bold;
+    margin-top: 10px;
+    font-size: 15px;
+}
+.Image{
+    margin-top: 20px;
+    margin-bottom: 20px;
+    border-radius: 50px;
+}
+
+.highlightGradient {
+  background: linear-gradient(90deg, #ffffff, #ffb279, #ff7a2f, #ffffff);
+  background-size: 300%;
+  font-weight: bold;
+
+  /* Padrão (poucos browsers suportam, mas não custa adicionar) */
+  background-clip: text;
+
+  /* Versão que realmente funciona */
+  -webkit-background-clip: text;
+
+  /* Necessário para o efeito */
+  color: transparent;
+  -webkit-text-fill-color: transparent;
+
+  animation: animateGradient 3s linear infinite;
+}
+
+
+@keyframes animateGradient {
+  to {
+    background-position: 300%;
+  }
+}
+
+
+
