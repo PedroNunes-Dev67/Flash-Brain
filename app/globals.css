@@ -15,3 +15,36 @@ body {
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
 }
+
+.navbar1 {
+  background-color: #4C2C1A; 
+  padding: 15px 30px;
+  display: flex;
+  align-items: center;
+  box-shadow: 0 2px 5px rgba(0, 0, 0, 0.4);
+}
+.logonav{
+  margin-right: auto;
+}
+.logonav img{
+  display: block;
+}
+.navbar2 {
+  list-style: none;
+  padding: 0;
+  margin: 0; 
+  display: flex;
+  gap: 30px
+}
+.navbar2 a {
+  color: white; 
+  text-decoration: none;
+  font-weight: 500; 
+  transition: color 0.3s ease-in-out;
+  font-family: 'Poppins', sans-serif;
+}
+.navbar2 a:hover { 
+  color: #f1c40f; 
+  border-bottom: 2px solid #f1c40f;
+  font-family: 'Poppins', sans-serif;
+}
